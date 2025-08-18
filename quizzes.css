@@ -1,0 +1,215 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Skip link */
+.skiplink {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+.skiplink:focus {
+    top: 0;
+}
+
+
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: #1abc9c;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #34495e;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form select,
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #16a085;
+}
+
+/* Aside and tips */
+aside {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-left: 5px solid #1abc9c;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+}
+
+
+
+/* Main layout container */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Left column (quizzes and form) */
+main > form {
+    grid-column: 1 / 2;
+}
+
+/* Right column (aside and extra content) */
+aside,
+section {
+    grid-column: 2 / 3;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-left: 5px solid #1abc9c;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Make headings stand out */
+main h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside,
+    section {
+        grid-column: 1 / -1;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 3em;
+    font-size: 0.9em;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1200px; /* Increase width to fit more content */
+    margin: 40px auto;
+    background: white;
+    padding: 40px; /* More padding for breathing room */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    min-height: 80vh; /* Ensures it grows with content */
+}
+body {
+    background-image: url('quizzes.jpg'); /* adjust path as needed */
+    background-size: cover;       /* scales image to cover entire area */
+    background-position: center;  /* centers the image */
+    background-repeat: no-repeat; /* prevents tiling */
+    background-attachment: fixed; /* keeps image fixed while scrolling */
+}
+
+

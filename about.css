@@ -1,0 +1,185 @@
+header {
+    background-color: #2E8B57; /* Earthy green */
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+    background-color: #FFD700; /* Gold accent */
+    color: #2E8B57;
+}
+main#about-maincontent {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 0 1em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+main section {
+    margin-bottom: 2em;
+    background-color: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+main h2 {
+    color: #2E8B57;
+    margin-bottom: 0.5em;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+section h2 {
+    color: #2E8B57;
+    margin-bottom: 0.5em;
+}
+section ul {
+    padding-left: 1.2em;
+}
+section ul li {
+    margin-bottom: 0.5em;
+}
+aside {
+    background-color: #f0f8ff;
+    padding: 1.5em;
+    margin: 2em 0;
+    border-left: 5px solid #2E8B57;
+    font-style: italic;
+}
+aside h2 {
+    margin-bottom: 0.5em;
+    color: #2E8B57;
+}
+blockquote {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Layout for all sections inside the main content */
+#about-maincontent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5em;
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+/* Styling for each section */
+#about-maincontent section {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+
+/* Special styling for the second section (Our Story) */
+#about-maincontent section:nth-of-type(2) {
+    background-color: #f0f8ff;
+    border-left: 5px solid #2E8B57;
+}
+
+/* Headings */
+#about-maincontent h2 {
+    color: #2E8B57;
+    margin-bottom: 0.5em;
+}
+
+/* Lists */
+#about-maincontent ul {
+    padding-left: 1.2em;
+}
+
+#about-maincontent ul li {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+/* Responsive text */
+#about-maincontent p, #about-maincontent li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 3em;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+footer ul li    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #FFD700;
+}
+
+
+body {
+    background-image: url('aboutbackground.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+

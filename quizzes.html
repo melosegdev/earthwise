@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="quizzes.css">
+</head>
+<body>
+   <section class="wrapper">
+        <!-- Skip link for screen reader and keyboard navigation -->
+        <a href="#quizzes-maincontent" class="skiplink">Skip to main content</a>
+
+        <!-- Header section -->
+        <header>
+            <h1>Quizzes</h1>
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="quizzes.html" aria-current="page">Quizzes</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Content section -->
+        <main id="quizzes-maincontent">
+            <h2>Test Your Knowledge</h2>
+            <p>Take our quizzes to reinforce your understanding of sustainability concepts.</p>
+
+            <form>
+                <fieldset>
+                    <legend>Quiz 1: Waste Reduction</legend>
+                    <label for="q1">Which of the following is NOT a recyclable item?</label><br>
+                    <select id="q1" name="q1" required>
+                        <option value="">--Choose an answer--</option>
+                        <option value="glass">Glass Bottles</option>
+                        <option value="plastic">Plastic Containers</option>
+                        <option value="food">Food Waste</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quiz 2: Energy Conservation</legend>
+                    <label for="q2">What is the most sustainable source of energy?</label><br>
+                    <select id="q2" name="q2" required>
+                        <option value="">--Choose an answer--</option>
+                        <option value="coal">Coal</option>
+                        <option value="solar">Solar</option>
+                        <option value="oil">Oil</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quiz 3: The 3Rs</legend>
+                    <p>Which actions are part of the "3Rs" of sustainability? (Select all that apply)</p>
+                    <label><input type="checkbox" name="q3" value="reduce" required> Reduce</label><br>
+                    <label><input type="checkbox" name="q3" value="reuse"> Reuse</label><br>
+                    <label><input type="checkbox" name="q3" value="recycle"> Recycle</label><br>
+                    <label><input type="checkbox" name="q3" value="replace"> Replace</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quiz 4: True or False</legend>
+                    <p>Planting more trees can help reduce carbon dioxide in the atmosphere.</p>
+                    <label><input type="radio" name="q4" value="true" required> True</label><br>
+                    <label><input type="radio" name="q4" value="false"> False</label>
+                </fieldset>
+
+                <button type="submit">Submit Answers</button>
+            </form>
+
+            <aside aria-labelledby="tips-heading">
+                <h2 id="tips-heading">Quiz Tips</h2>
+                <ul>
+                    <li>Think about what you learned in the lessons before answering.</li>
+                    <li>Don't worry if you get an answer wrong, it's a chance to learn!</li>
+                    <li>You can revisit the <a href="lessons.html">Lessons</a> page to review the material.</li>
+                </ul>
+            </aside>
+
+            <section>
+                <h2>Ready for More?</h2>
+                <p>After completing the quiz, check out our <a href="resources.html">Resources</a> page for more learning materials.</p>
+            </section>
+
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <p>&copy; 2025 EarthWise. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>
